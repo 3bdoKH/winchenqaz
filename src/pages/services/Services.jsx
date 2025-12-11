@@ -6,7 +6,7 @@ import towedCar from '../../media/towed-car.png';
 import tools from '../../media/tools.png';
 import fuel from '../../media/fuel.png';
 import battery from '../../media/battery.png';
-
+import { Wrench, Car, Search, FileText } from 'lucide-react';
 const ServicesPage = () => {
     const mainServices = [
         {
@@ -88,22 +88,22 @@ const ServicesPage = () => {
 
     const additionalServices = [
         {
-            icon: '🔧',
+            icon: <Wrench size={70} color='#FDB913' />,
             title: 'فتح السيارات المغلقة',
             description: 'نساعدك في فتح سيارتك إذا نسيت المفتاح بالداخل'
         },
         {
-            icon: '🚗',
+            icon: <Car size={70} color='#FDB913' />,
             title: 'سحب السيارات العالقة',
             description: 'إنقاذ السيارات العالقة في الرمال أو الطين'
         },
         {
-            icon: '🔍',
+            icon: <Search size={70} color='#FDB913' />,
             title: 'فحص ما قبل النقل',
             description: 'فحص شامل للسيارة قبل النقل لضمان سلامتها'
         },
         {
-            icon: '📋',
+            icon: <FileText size={70} color='#FDB913' />,
             title: 'تقارير مفصلة',
             description: 'تقرير كامل عن حالة السيارة والخدمة المقدمة'
         }

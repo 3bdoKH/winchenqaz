@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import heroBackground from '../../media/hero-background.jpg';
-
+import { ClockCheck, PhoneCall } from 'lucide-react';
 const Hero = () => {
     const scrollToContent = () => {
         window.scrollBy({
@@ -39,7 +39,9 @@ const Hero = () => {
             <div className="hero-banner">
                 <div className="banner-container">
                     <div className="banner-item arrival">
-                        <div className="banner-icon">⏱️</div>
+                        <div className="banner-icon">
+                            <ClockCheck />
+                        </div>
                         <div className="banner-text">
                             <span className="banner-label">أقل من</span>
                             <span className="banner-highlight"> 30 دقيقة</span>
@@ -54,7 +56,9 @@ const Hero = () => {
                     </div>
 
                     <div className="banner-item service">
-                        <div className="banner-icon">📞</div>
+                        <div className="banner-icon">
+                            <PhoneCall />
+                        </div>
                         <div className="banner-text">
                             <span className="banner-highlight">متاح 24/7</span>
                             <span className="banner-label"> خدمة السحب</span>

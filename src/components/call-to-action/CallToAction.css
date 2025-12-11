@@ -140,7 +140,7 @@
     margin-top: 30px;
 }
 
-.form-row {
+.home-form-row {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
@@ -267,7 +267,7 @@
         font-size: 2rem;
     }
 
-    .form-row {
+    .home-form-row {
         flex-direction: column;
         gap: 15px;
     }

@@ -51,15 +51,6 @@ const CallToAction = () => {
         // Open WhatsApp with the pre-filled message
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
         window.open(whatsappURL, '_blank');
-
-        // Optional: Reset form after submission
-        // setFormData({
-        //     name: '',
-        //     phoneNumber: '',
-        //     email: '',
-        //     serviceType: '',
-        //     message: ''
-        // });
     };
 
     return (
@@ -97,7 +88,7 @@ const CallToAction = () => {
                         <div className="divider-line"></div>
 
                         <form className="quote-form" onSubmit={handleSubmit}>
-                            <div className="form-row">
+                            <div className="home-form-row">
                                 <input
                                     type="text"
                                     name="name"
@@ -118,7 +109,7 @@ const CallToAction = () => {
                                 />
                             </div>
 
-                            <div className="form-row">
+                            <div className="home-form-row">
                                 <input
                                     type="email"
                                     name="email"
@@ -129,7 +120,7 @@ const CallToAction = () => {
                                 />
                             </div>
 
-                            <div className="form-row">
+                            <div className="home-form-row">
                                 <select
                                     name="serviceType"
                                     value={formData.serviceType}
@@ -146,7 +137,7 @@ const CallToAction = () => {
                                 </select>
                             </div>
 
-                            <div className="form-row">
+                            <div className="home-form-row">
                                 <textarea
                                     name="message"
                                     placeholder="رسالتك"

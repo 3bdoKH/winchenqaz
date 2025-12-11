@@ -266,6 +266,8 @@
 .value-icon {
     font-size: 3.5rem;
     margin-bottom: 20px;
+    color: #FDB913;
+
 }
 
 .value-title {
@@ -467,6 +469,7 @@
 
 .badge-icon {
     font-size: 1.3rem;
+    margin-bottom: -11px;
 }
 
 /* How We Work */

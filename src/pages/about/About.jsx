@@ -6,30 +6,31 @@ import towedCar from '../../media/towed-car.png';
 import tools from '../../media/tools.png';
 import fuel from '../../media/fuel.png';
 import battery from '../../media/battery.png';
-
+import { ArrowBigUpDash, ShieldBan, HandCoins, Target, Handshake, Rocket, MapPin, Trophy, ShieldCheck } from 'lucide-react';
+import { Star } from 'lucide-react';
 const About = () => {
     const values = [
         {
             id: 1,
-            icon: '⚡',
-            title: 'السرعة والكفاءة',
+            icon: <ArrowBigUpDash size={70} />,
+            title: "السرعة والكفاءة",
             description: 'نصل إليك في أسرع وقت ممكن مع فريق محترف وجاهز دائماً'
         },
         {
             id: 2,
-            icon: '🛡️',
+            icon: <ShieldBan size={70} />,
             title: 'الأمان والجودة',
             description: 'نستخدم أحدث المعدات والتقنيات لضمان سلامة سيارتك'
         },
         {
             id: 3,
-            icon: '💰',
+            icon: <HandCoins size={70} />,
             title: 'أسعار تنافسية',
             description: 'نقدم أفضل الأسعار في السوق بدون رسوم خفية'
         },
         {
             id: 4,
-            icon: '🤝',
+            icon: <Handshake size={70} />,
             title: 'خدمة عملاء ممتازة',
             description: 'فريق دعم متاح على مدار الساعة لخدمتك'
         }
@@ -97,17 +98,17 @@ const About = () => {
 
     const certifications = [
         {
-            icon: '🏆',
+            icon: <Trophy size={70} color='#FDB913' />,
             title: 'معتمدون',
             description: 'حاصلون على جميع التراخيص والشهادات اللازمة من الجهات المختصة'
         },
         {
-            icon: '✓',
+            icon: <ShieldCheck size={70} color='#FDB913' />,
             title: 'مؤمنون',
             description: 'تأمين شامل على جميع السيارات والمعدات المنقولة'
         },
         {
-            icon: '⭐',
+            icon: <Star size={70} color='#FDB913' />,
             title: 'معتمدون دولياً',
             description: 'نتبع المعايير الدولية في خدمات الإنقاذ والونش'
         }
@@ -176,7 +177,9 @@ const About = () => {
             <section className="mission-vision">
                 <div className="mv-container">
                     <div className="mv-card">
-                        <div className="mv-icon">🎯</div>
+                        <div className="mv-icon">
+                            <Target size={70} color='#FDB913' />
+                        </div>
                         <h3 className="mv-title">رؤيتنا</h3>
                         <p className="mv-description">
                             أن نكون الشركة الرائدة والأكثر موثوقية في مجال خدمات إنقاذ السيارات في مصر والشرق الأوسط،
@@ -184,7 +187,9 @@ const About = () => {
                         </p>
                     </div>
                     <div className="mv-card">
-                        <div className="mv-icon">🚀</div>
+                        <div className="mv-icon">
+                            <Rocket size={70} color='#FDB913' />
+                        </div>
                         <h3 className="mv-title">مهمتنا</h3>
                         <p className="mv-description">
                             تقديم خدمات إنقاذ سيارات عالية الجودة بأسرع وقت استجابة، مع الحفاظ على أعلى معايير
@@ -290,7 +295,9 @@ const About = () => {
                     <div className="areas-grid">
                         {serviceAreas.map((area, index) => (
                             <div key={index} className="area-badge">
-                                <span className="badge-icon">📍</span>
+                                <span className="badge-icon">
+                                    <MapPin color='#FDB913' />
+                                </span>
                                 <span className="badge-text">{area}</span>
                             </div>
                         ))}

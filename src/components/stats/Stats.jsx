@@ -94,7 +94,7 @@ const Stats = () => {
         {statsData.map((stat) => (
           <div key={stat.id} className="stat-item">
             <div className="stat-icon">{stat.icon}</div>
-            <div className="stat-number">
+            <div className="home-stat-number">
               {counters[stat.id].toLocaleString()}
             </div>
             <div className="stat-label">{stat.label}</div>

@@ -63,6 +63,9 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .blog-card:hover {
@@ -96,13 +99,11 @@
     left: 0;
     right: 0;
     height: 40px;
-    background: repeating-linear-gradient(
-        45deg,
-        #FDB913,
-        #FDB913 10px,
-        #2B2B2B 10px,
-        #2B2B2B 20px
-    );
+    background: repeating-linear-gradient(45deg,
+            #FDB913,
+            #FDB913 10px,
+            #2B2B2B 10px,
+            #2B2B2B 20px);
     opacity: 0.9;
 }
 
@@ -162,6 +163,31 @@
 .blog-author::before {
     content: '👤';
     font-size: 1rem;
+}
+
+.blog-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog-button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    background: #FDB913;
+    color: #2B2B2B;
+    border: none;
+    cursor: pointer;
+}
+
+.blog-button:hover {
+    background: #F7A400;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.4);
 }
 
 /* Responsive Design */
@@ -231,4 +257,3 @@
         gap: 10px;
     }
 }
-

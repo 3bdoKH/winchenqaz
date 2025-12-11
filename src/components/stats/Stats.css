@@ -74,7 +74,7 @@
   height: 60px;
 }
 
-.stat-number {
+.home-stat-number {
   font-size: 56px;
   font-weight: 700;
   color: #ffffff;
@@ -83,7 +83,7 @@
   transition: color 0.3s ease;
 }
 
-.stat-item:hover .stat-number {
+.stat-item:hover .home-stat-number {
   color: #ffc107;
 }
 
@@ -104,7 +104,7 @@
   }
 
 
-  .stat-number {
+  .home-stat-number {
     font-size: 52px;
   }
 }
@@ -120,7 +120,7 @@
   }
 
 
-  .stat-number {
+  .home-stat-number {
     font-size: 48px;
   }
 
@@ -140,7 +140,7 @@
     gap: 50px 40px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 46px;
   }
 
@@ -159,7 +159,7 @@
     gap: 40px 30px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 42px;
   }
 
@@ -183,7 +183,7 @@
     gap: 12px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 38px;
   }
 
@@ -202,7 +202,7 @@
     gap: 30px 20px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 34px;
   }
 
@@ -241,7 +241,7 @@
     gap: 30px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 36px;
   }
 
@@ -265,7 +265,7 @@
     gap: 8px;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 32px;
   }
 

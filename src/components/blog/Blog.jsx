@@ -1,6 +1,7 @@
 import React from 'react';
 import './Blog.css';
 import { articles } from '../../data/articles';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     // Get the first 3 articles
@@ -31,7 +32,11 @@ const Blog = () => {
 
                 <div className="blog-grid">
                     {featuredArticles.map((article) => (
-                        <div key={article.id} className="blog-card">
+                        <a
+                            key={article.id}
+                            href={`/articles/${article.slug}`}
+                            className="blog-card"
+                        >
                             <div className="blog-image-wrapper">
                                 <img src={article.image} alt={article.title} className="blog-image" />
                                 <div className="blog-image-overlay"></div>
@@ -44,8 +49,13 @@ const Blog = () => {
                                     <span className="blog-author">بواسطة {article.author}</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
+                </div>
+                <div className="blog-button-container">
+                    <Link to="/articles" className="blog-button">
+                        عرض الكل
+                    </Link>
                 </div>
             </div>
         </section>

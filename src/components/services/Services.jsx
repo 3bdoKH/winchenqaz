@@ -55,7 +55,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className="services-grid">
+                <div className="home-services-grid">
                     {servicesData.map((service) => (
                         <div key={service.id} className="service-card">
                             <div className="service-icon-wrapper">

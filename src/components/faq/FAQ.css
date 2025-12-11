@@ -34,8 +34,8 @@
 
 .map-overlay {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
+    bottom: -95px;
+    left: 46%;
     transform: translateX(-50%);
     background: rgba(253, 185, 19, 0.95);
     padding: 15px 30px;
