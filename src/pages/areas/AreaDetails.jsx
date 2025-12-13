@@ -115,7 +115,7 @@ const AreaDetails = () => {
                 <div className="area-details-hero-content">
                     <div className="hero-icon">{areaIcons[mainArea.name]}</div>
                     <h1 className="area-details-hero-title">
-                        ونش وإنقاذ <span className="highlight">{displayName}</span>
+                        ونش إنقاذ <span className="highlight">{displayName}</span>
                     </h1>
                     <p className="area-details-hero-subtitle">خدمة احترافية 24/7 في {displayName}</p>
                     <div className="breadcrumb">
