@@ -5,10 +5,10 @@ import phone from '../../media/phone.svg'
 const FloatingIcons = () => {
     return (
         <div className='floating-icons'>
-            <div className='floating-icon' onClick={() => window.open('https://wa.me/+2001055888893', '_blank')}>
+            <div className='floating-icon' onClick={() => window.open('https://wa.me/+20123456789', '_blank')}>
                 <img src={whatsapp} alt="" />
             </div>
-            <div className='floating-icon phone' onClick={() => window.open('tel:01055888893', '_blank')}>
+            <div className='floating-icon phone' onClick={() => window.open('tel:0123456789', '_blank')}>
                 <img src={phone} alt="" />
             </div>
         </div>

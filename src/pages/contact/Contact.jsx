@@ -32,7 +32,7 @@ const Contact = () => {
             `*الرسالة:* ${formData.message}`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappNumber = '+2001055888893';
+        const whatsappNumber = '+200123456789';
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
         window.open(whatsappURL, '_blank');
@@ -47,8 +47,8 @@ const Contact = () => {
         {
             icon: <Phone color='#FDB913' style={{ marginBottom: '-6px' }} />,
             title: 'الهاتف',
-            details: ['01055888893', '24/7 طوارئ'],
-            link: 'tel:+2001055888893'
+            details: ['0123456789', '24/7 طوارئ'],
+            link: 'tel:+200123456789'
         },
         {
             icon: <Mail color='#FDB913' style={{ marginBottom: '-6px' }} />,
@@ -95,14 +95,14 @@ const Contact = () => {
                         <span className="quick-icon"><Phone color='#FDB913' style={{ marginBottom: '-6px' }} /></span>
                         <div className="quick-info">
                             <h4>اتصل الآن</h4>
-                            <a href="tel:+2001055888893">01055888893</a>
+                            <a href="tel:+200123456789">0123456789</a>
                         </div>
                     </div>
                     <div className="quick-contact-item">
                         <span className="quick-icon"><MessageCircle color='#FDB913' style={{ marginBottom: '-6px' }} /></span>
                         <div className="quick-info">
                             <h4>واتساب</h4>
-                            <a href="https://wa.me/2001055888893" target="_blank" rel="noopener noreferrer">أرسل رسالة</a>
+                            <a href="https://wa.me/200123456789" target="_blank" rel="noopener noreferrer">أرسل رسالة</a>
                         </div>
                     </div>
                     <div className="quick-contact-item">
@@ -263,8 +263,8 @@ const Contact = () => {
                     <p className="emergency-description">
                         إذا كنت بحاجة إلى مساعدة فورية، اتصل بنا الآن! فريقنا متاح 24/7 للاستجابة لحالات الطوارئ.
                     </p>
-                    <a href="tel:+2001055888893" className="emergency-button">
-                        اتصل للطوارئ: 01055888893
+                    <a href="tel:+200123456789" className="emergency-button">
+                        اتصل للطوارئ: 0123456789
                     </a>
                 </div>
             </section>

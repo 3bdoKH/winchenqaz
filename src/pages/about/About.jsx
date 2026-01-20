@@ -435,7 +435,7 @@ const About = () => {
                         نحن هنا لخدمتك على مدار الساعة. اتصل بنا الآن وسنصل إليك في أسرع وقت ممكن.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2001055888893" className="cta-button primary">
+                        <a href="tel:+0123456789" className="cta-button primary">
                             اتصل بنا الآن
                         </a>
                         <a href="/contact" className="cta-button secondary">

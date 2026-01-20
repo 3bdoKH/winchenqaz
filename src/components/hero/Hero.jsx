@@ -50,8 +50,8 @@ const Hero = () => {
                     </div>
 
                     <div className="banner-item phone">
-                        <a href="tel:01055888893" className="phone-number">
-                            01055888893
+                        <a href="tel:0123456789" className="phone-number">
+                            0123456789
                         </a>
                     </div>
 

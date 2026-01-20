@@ -192,8 +192,8 @@ const Areas = () => {
                         نحن نتوسع باستمرار لتغطية المزيد من المناطق. اتصل بنا الآن للتأكد من توفر الخدمة في منطقتك.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2001055888893" className="cta-button primary">
-                            اتصل للاستفسار: 01055888893
+                        <a href="tel:+2012456789" className="cta-button primary">
+                            اتصل للاستفسار: 012456789
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             أرسل رسالة

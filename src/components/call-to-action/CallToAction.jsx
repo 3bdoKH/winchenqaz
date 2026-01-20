@@ -46,7 +46,7 @@ const CallToAction = () => {
         const encodedMessage = encodeURIComponent(message);
 
         // WhatsApp number (Egyptian format: 20 + number without leading 0)
-        const whatsappNumber = '+2001055888893';
+        const whatsappNumber = '0123456789';
 
         // Open WhatsApp with the pre-filled message
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;

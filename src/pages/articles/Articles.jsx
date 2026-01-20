@@ -188,8 +188,8 @@ const ArticlesPage = () => {
                         تواصل معنا الآن وسنكون سعداء بالإجابة على جميع أسئلتك حول خدماتنا.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2001055888893" className="cta-button primary">
-                            اتصل بنا: 01055888893
+                        <a href="tel:+2001245789" className="cta-button primary">
+                            اتصل بنا: 01245789
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             أرسل رسالة

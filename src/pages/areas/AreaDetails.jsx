@@ -263,15 +263,15 @@ const AreaDetails = () => {
                         اتصل بنا فوراً وسيصل فريقنا إليك في {displayName} خلال دقائق!
                     </p>
                     <div className="emergency-buttons">
-                        <a href="tel:+2001055888893" className="emergency-button primary">
+                        <a href="tel:+20012456789" className="emergency-button primary">
                             <Phone color='black' style={
                                 {
                                     marginBottom: '-6px'
                                 }
-                            } /> اتصل الآن: 01055888893
+                            } /> اتصل الآن: 012456789
                         </a>
                         <a
-                            href={`https://wa.me/2001055888893?text=${encodeURIComponent(`أحتاج خدمة ونش في ${displayName}`)}`}
+                            href={`https://wa.me/20012456789?text=${encodeURIComponent(`أحتاج خدمة ونش في ${displayName}`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="emergency-button secondary"
