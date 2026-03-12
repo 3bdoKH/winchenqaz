@@ -57,7 +57,9 @@ const ArticlesPage = () => {
             <section className="articles-stats">
                 <div className="stats-container">
                     <div className="stat-item">
-                        <div className="stat-number">{articles.length}</div>
+                        {/*<div className="stat-number">{articles.length}</div> */}
+                        <div className="stat-number">113</div>
+
                         <div className="stat-label">مقال منشور</div>
                     </div>
                     <div className="stat-item">
