@@ -8,15 +8,15 @@ const Areas = () => {
     const [selectedArea, setSelectedArea] = useState(null);
 
     const areaIcons = {
-        'القاهرة': <Building2 color='#FDB913' />,
-        'الجيزة': <Building color='#FDB913' />,
-        'الإسكندرية': <Building2 color='#FDB913' />,
+        'القاهرة': <Building2 color='#1565C0' />,
+        'الجيزة': <Building color='#1565C0' />,
+        'الإسكندرية': <Building2 color='#1565C0' />,
     };
 
     const areaColors = {
-        'القاهرة': '#FDB913',
-        'الجيزة': '#F7A400',
-        'الإسكندرية': '#E89500'
+        'القاهرة': '#E53935',
+        'الجيزة': '#C62828',
+        'الإسكندرية': '#B71C1C'
     };
 
     const getTotalSubareas = () => {
@@ -161,22 +161,22 @@ const Areas = () => {
                     </div>
                     <div className="why-areas-grid">
                         <div className="why-area-card">
-                            <div className="why-area-icon"><Rocket size={70} color='#FDB913' /></div>
+                            <div className="why-area-icon"><Rocket size={70} color='#1565C0' /></div>
                             <h3>استجابة سريعة</h3>
                             <p>وجودنا في هذه المناطق يضمن وصولنا إليك خلال 30 دقيقة أو أقل</p>
                         </div>
                         <div className="why-area-card">
-                            <div className="why-area-icon"><Map size={70} color='#FDB913' /></div>
+                            <div className="why-area-icon"><Map size={70} color='#1565C0' /></div>
                             <h3>معرفة محلية</h3>
                             <p>فريقنا يعرف كل شارع وزقاق في المناطق التي نخدمها</p>
                         </div>
                         <div className="why-area-card">
-                            <div className="why-area-icon"><Zap size={70} color='#FDB913' /></div>
+                            <div className="why-area-icon"><Zap size={70} color='#1565C0' /></div>
                             <h3>توزيع استراتيجي</h3>
                             <p>ونشاتنا موزعة بشكل استراتيجي لتغطية جميع المناطق</p>
                         </div>
                         <div className="why-area-card">
-                            <div className="why-area-icon"><Phone size={70} color='#FDB913' /></div>
+                            <div className="why-area-icon"><Phone size={70} color='#1565C0' /></div>
                             <h3>دعم محلي</h3>
                             <p>فريق دعم متخصص لكل منطقة يفهم احتياجاتك</p>
                         </div>

@@ -39,7 +39,7 @@
 }
 
 .page-services-hero-title .highlight {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 .services-hero-subtitle {
@@ -58,7 +58,7 @@
 }
 
 .breadcrumb a {
-    color: #FDB913;
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -91,7 +91,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #FDB913;
+    color: var(--primary);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -104,7 +104,7 @@
 }
 
 .section-title .highlight {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 .title-divider {
@@ -116,7 +116,7 @@
 }
 
 .title-divider .star {
-    color: #FDB913;
+    color: var(--primary);
     font-size: 1.2rem;
 }
 
@@ -189,7 +189,7 @@
 
 .page-service-detail-short {
     font-size: 1.2rem;
-    color: #FDB913;
+    color: var(--primary);
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -216,21 +216,21 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    background: rgba(253, 185, 19, 0.05);
+    background: var(--primary-glow-light);
     padding: 12px 15px;
     border-radius: 8px;
-    border-right: 3px solid #FDB913;
+    border-right: 3px solid var(--primary);
     transition: all 0.3s ease;
 }
 
 .page-service-features-list li:hover {
-    background: rgba(253, 185, 19, 0.1);
+    background: var(--primary-glow-light);
     transform: translateX(-5px);
-    box-shadow: 0 2px 10px rgba(253, 185, 19, 0.2);
+    box-shadow: 0 2px 10px var(--primary-glow-light);
 }
 
 .feature-icon {
-    color: #FDB913;
+    color: var(--primary);
     font-weight: 700;
     font-size: 1.1rem;
     min-width: 20px;
@@ -241,7 +241,7 @@
 .page-service-cta-button {
     display: inline-block;
     padding: 15px 40px;
-    background: #FDB913;
+    background: var(--primary);
     color: #2B2B2B;
     text-decoration: none;
     font-weight: 700;
@@ -250,9 +250,9 @@
 }
 
 .page-service-cta-button:hover {
-    background: #F7A400;
+    background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.4);
+    box-shadow: 0 5px 20px var(--primary-glow);
 }
 
 /* Additional Services */
@@ -290,9 +290,9 @@
 
 .additional-card:hover {
     background: #FFFFFF;
-    border-color: #FDB913;
+    border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(253, 185, 19, 0.2);
+    box-shadow: 0 10px 25px var(--primary-glow-light);
 }
 
 .additional-icon {
@@ -316,7 +316,7 @@
 /* Pricing Section */
 .pricing-section {
     padding: 100px 20px;
-    background: linear-gradient(135deg, #FDB913 0%, #F7A400 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -386,7 +386,7 @@
     display: inline-block;
     padding: 15px 50px;
     background: #2B2B2B;
-    color: #FDB913;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 700;
     border-radius: 50px;
@@ -435,13 +435,13 @@
 
 .why-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(253, 185, 19, 0.2);
+    box-shadow: 0 10px 30px var(--primary-glow-light);
 }
 
 .why-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #FDB913 0%, #F7A400 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: #2B2B2B;
     font-size: 1.5rem;
     font-weight: 700;
@@ -510,24 +510,24 @@
 }
 
 .cta-button.primary {
-    background: #FDB913;
+    background: var(--primary);
     color: #2B2B2B;
 }
 
 .cta-button.primary:hover {
-    background: #F7A400;
+    background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.4);
+    box-shadow: 0 5px 20px var(--primary-glow);
 }
 
 .cta-button.secondary {
     background: transparent;
-    color: #FDB913;
-    border: 2px solid #FDB913;
+    color: var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .cta-button.secondary:hover {
-    background: #FDB913;
+    background: var(--primary);
     color: #2B2B2B;
     transform: translateY(-3px);
 }

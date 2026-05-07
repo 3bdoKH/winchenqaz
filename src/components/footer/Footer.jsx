@@ -36,7 +36,7 @@ const Footer = () => {
                             />
                             <button type="submit" className="newsletter-button">
                                 <span className="button-icon">
-                                    <Mail color='#FDB913' />
+                                    <Mail color='#1565C0' />
                                 </span>
                             </button>
                         </form>

@@ -33,7 +33,7 @@
 }
 
 .partners-title .highlight {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 .partners-divider {
@@ -45,7 +45,7 @@
 }
 
 .partners-divider .star {
-    color: #FDB913;
+    color: var(--primary);
     font-size: 1.2rem;
 }
 
@@ -109,7 +109,7 @@
 
 .partner-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(253, 185, 19, 0.3);
+    box-shadow: 0 4px 20px var(--primary-glow);
 }
 
 

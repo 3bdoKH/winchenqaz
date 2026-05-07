@@ -39,7 +39,7 @@
 }
 
 .contact-hero-title .highlight {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 .contact-hero-subtitle {
@@ -58,7 +58,7 @@
 }
 
 .breadcrumb a {
-    color: #FDB913;
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -74,7 +74,7 @@
 /* Quick Contact Bar */
 .quick-contact {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #FDB913 0%, #F7A400 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
 }
 
 .quick-contact-container {
@@ -123,7 +123,7 @@
 }
 
 .quick-info a:hover {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 /* Main Contact Section */
@@ -154,7 +154,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #FDB913;
+    color: var(--primary);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -167,7 +167,7 @@
 }
 
 .section-title .highlight {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 .title-divider {
@@ -178,7 +178,7 @@
 }
 
 .title-divider .star {
-    color: #FDB913;
+    color: var(--primary);
     font-size: 1.2rem;
 }
 
@@ -228,8 +228,8 @@
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #FDB913;
-    box-shadow: 0 0 0 3px rgba(253, 185, 19, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-glow-light);
 }
 
 .form-group textarea {
@@ -240,7 +240,7 @@
 .submit-button {
     width: 100%;
     padding: 18px;
-    background: #FDB913;
+    background: var(--primary);
     color: #2B2B2B;
     border: none;
     border-radius: 50px;
@@ -252,9 +252,9 @@
 }
 
 .submit-button:hover {
-    background: #F7A400;
+    background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.4);
+    box-shadow: 0 5px 20px var(--primary-glow);
 }
 
 /* Contact Sidebar */
@@ -311,13 +311,13 @@
     gap: 20px;
     align-items: flex-start;
     transition: all 0.3s ease;
-    border-right: 4px solid #FDB913;
+    border-right: 4px solid var(--primary);
     direction: rtl;
 }
 
 .info-card:hover {
     background: #FFFFFF;
-    box-shadow: 0 4px 20px rgba(253, 185, 19, 0.2);
+    box-shadow: 0 4px 20px var(--primary-glow-light);
     transform: translateX(-5px);
 }
 
@@ -353,7 +353,7 @@
 }
 
 .info-content a:hover {
-    color: #FDB913;
+    color: var(--primary);
 }
 
 /* Quick Links Section */
@@ -399,10 +399,10 @@
 }
 
 .quick-link-card:hover {
-    background: #FDB913;
-    border-color: #FDB913;
+    background: var(--primary);
+    border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.3);
+    box-shadow: 0 5px 20px var(--primary-glow);
 }
 
 .link-icon {
@@ -412,7 +412,7 @@
 /* Emergency CTA */
 .emergency-cta {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #FDB913 0%, #F7A400 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     text-align: center;
     direction: rtl;
     position: relative;
@@ -476,7 +476,7 @@
     display: inline-block;
     padding: 18px 50px;
     background: #2B2B2B;
-    color: #FDB913;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2rem;
@@ -529,9 +529,9 @@
 
 .faq-quick-item:hover {
     background: #FFFFFF;
-    border-color: #FDB913;
+    border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(253, 185, 19, 0.2);
+    box-shadow: 0 5px 20px var(--primary-glow-light);
 }
 
 .faq-quick-item h4 {
@@ -551,7 +551,7 @@
 .view-all-faq {
     display: inline-block;
     padding: 12px 30px;
-    background: #FDB913;
+    background: var(--primary);
     color: #2B2B2B;
     text-decoration: none;
     font-weight: 600;
@@ -560,7 +560,7 @@
 }
 
 .view-all-faq:hover {
-    background: #F7A400;
+    background: var(--primary-dark);
     transform: translateY(-3px);
 }
 
