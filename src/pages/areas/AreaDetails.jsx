@@ -4,7 +4,7 @@ import './AreaDetails.css';
 import heroBackground from '../../media/hero-background.jpg';
 import contactImage from '../../media/contact.jpg';
 import { areas } from '../../data/areas';
-import { Building2, Building, Zap, Car, Wrench, MapPin, Phone, MessageCircle, CheckCircle, Clock, Shield, Award } from 'lucide-react';
+import { Building2, Building, Zap, Car, Wrench, MapPin, Phone, MessageCircle, CheckCircle } from 'lucide-react';
 const AreaDetails = () => {
     const { areaName } = useParams();
     const navigate = useNavigate();
@@ -229,12 +229,12 @@ const AreaDetails = () => {
                                 مع جميع أنواع الحالات الطارئة في أسرع وقت ممكن.
                             </p>
                             <ul className="coverage-features">
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> خدمة 24 ساعة طوال أيام الأسبوع</li>
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> أسرع وقت استجابة في المنطقة</li>
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> أسعار تنافسية وشفافة بدون رسوم خفية</li>
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> فريق محترف ومدرب على أعلى مستوى</li>
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> معدات حديثة وآمنة للحفاظ على سيارتك</li>
-                                <li><CheckCircle size={16} style={{display:'inline-block', marginLeft:'8px', marginBottom:'-3px', color:'#1565C0'}} /> تأمين شامل على جميع السيارات المنقولة</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> خدمة 24 ساعة طوال أيام الأسبوع</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> أسرع وقت استجابة في المنطقة</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> أسعار تنافسية وشفافة بدون رسوم خفية</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> فريق محترف ومدرب على أعلى مستوى</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> معدات حديثة وآمنة للحفاظ على سيارتك</li>
+                                <li><CheckCircle size={16} style={{ display: 'inline-block', marginLeft: '8px', marginBottom: '-3px', color: '#1565C0' }} /> تأمين شامل على جميع السيارات المنقولة</li>
                             </ul>
                             <a href="/contact" className="coverage-cta">احجز الخدمة الآن</a>
                         </div>
