@@ -47,12 +47,7 @@ const Services = () => {
                     <h2 className="services-title">
                         خدماتنا <span className="highlight">المميزة</span>
                     </h2>
-                    <div className="services-divider">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                    </div>
+                    <div className="services-divider"></div>
                 </div>
 
                 <div className="home-services-grid">

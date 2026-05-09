@@ -51,12 +51,7 @@ const WhatWeOffer = () => {
                         <h2 className="offer-title">
                             ماذا <span className="highlight">نقدم</span>
                         </h2>
-                        <div className="offer-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="offer-divider"></div>
                     </div>
 
                     <p className="offer-description">

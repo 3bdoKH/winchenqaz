@@ -140,10 +140,6 @@ const About = () => {
                                 الرائدون في مجال <span className="highlight">خدمات الإنقاذ</span>
                             </h2>
                             <div className="title-divider">
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
                             </div>
                             <p className="intro-description">
                                 نحن شركة رائدة في مجال خدمات إنقاذ السيارات والونش في مصر، نقدم خدماتنا على مدار الساعة
@@ -207,11 +203,7 @@ const About = () => {
                         <h2 className="section-title">
                             قيمنا <span className="highlight">ومبادئنا</span>
                         </h2>
-                        <div className="about-title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
+                        <div className="title-divider">
                         </div>
                     </div>
                     <div className="values-grid">
@@ -252,11 +244,7 @@ const About = () => {
                         <h2 className="section-title">
                             ما يجعلنا <span className="highlight">الأفضل</span>
                         </h2>
-                        <div className="about-title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
+                        <div className="title-divider">
                         </div>
                     </div>
                     <div className="features-grid">
@@ -282,10 +270,6 @@ const About = () => {
                             مناطق <span className="highlight">تغطيتنا</span>
                         </h2>
                         <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
                         </div>
                         <p className="coverage-description">
                             نفخر بتقديم خدماتنا في جميع أنحاء جمهورية مصر العربية. أينما كنت، نحن في خدمتك
@@ -314,10 +298,6 @@ const About = () => {
                             كيف <span className="highlight">نعمل</span>
                         </h2>
                         <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
                         </div>
                     </div>
                     <div className="process-steps">
@@ -344,10 +324,6 @@ const About = () => {
                             الجودة <span className="highlight">والاعتماد</span>
                         </h2>
                         <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
                         </div>
                     </div>
                     <div className="certifications-grid">
@@ -372,10 +348,6 @@ const About = () => {
                                 تاريخنا <span className="highlight">وإنجازاتنا</span>
                             </h2>
                             <div className="title-divider">
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
                             </div>
                             <div className="timeline">
                                 <div className="timeline-item">

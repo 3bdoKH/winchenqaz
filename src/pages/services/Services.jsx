@@ -142,12 +142,7 @@ const ServicesPage = () => {
                         <h2 className="section-title">
                             خدمات <span className="highlight">متكاملة</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                         <p className="overview-description">
                             نحن نقدم مجموعة واسعة من خدمات إنقاذ السيارات والونش في جميع أنحاء مصر.
                             فريقنا المحترف متاح على مدار 24 ساعة لضمان راحتك وسلامتك على الطريق.
@@ -196,12 +191,7 @@ const ServicesPage = () => {
                         <h2 className="section-title">
                             المزيد من <span className="highlight">الخدمات</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="additional-grid">
                         {additionalServices.map((service, index) => (
@@ -223,12 +213,7 @@ const ServicesPage = () => {
                         <h2 className="section-title">
                             <span className="white-highlight">التسعير</span> والدفع
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                         <p className="pricing-description">
                             نحن نؤمن بالشفافية الكاملة في التسعير. جميع أسعارنا واضحة ومعلنة مسبقاً،
                             ولا نفرض أي رسوم خفية. نقدم أفضل قيمة مقابل المال مع الحفاظ على أعلى معايير الجودة.
@@ -256,12 +241,7 @@ const ServicesPage = () => {
                         <h2 className="section-title">
                             لماذا تختار <span className="highlight">خدماتنا</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="why-grid">
                         <div className="why-card">

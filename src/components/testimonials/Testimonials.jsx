@@ -44,12 +44,7 @@ const Testimonials = () => {
                     <h2 className="testimonials-title">
                         ماذا يقول <span className="highlight">عملاؤنا</span>
                     </h2>
-                    <div className="testimonials-divider">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                    </div>
+                    <div className="title-divider"></div>
                 </div>
 
                 <div className="testimonials-slider">

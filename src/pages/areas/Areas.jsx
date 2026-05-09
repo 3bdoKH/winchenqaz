@@ -47,12 +47,7 @@ const Areas = () => {
                         <h2 className="section-title">
                             نخدم <span className="highlight">جميع المناطق</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                         <p className="overview-description">
                             نفخر بتقديم خدماتنا في {getTotalSubareas()} منطقة عبر {areas.length} محافظات رئيسية.
                             أينما كنت في مصر، فريقنا جاهز للوصول إليك في أسرع وقت ممكن بأعلى مستوى من
@@ -152,12 +147,7 @@ const Areas = () => {
                         <h2 className="section-title">
                             لماذا نغطي هذه المناطق
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="why-areas-grid">
                         <div className="why-area-card">

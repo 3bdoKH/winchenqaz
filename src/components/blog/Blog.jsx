@@ -22,12 +22,7 @@ const Blog = () => {
                     <h2 className="blog-title">
                         مدونتنا <span className="highlight">الإخبارية</span>
                     </h2>
-                    <div className="blog-divider">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                    </div>
+                    <div className="title-divider"></div>
                 </div>
 
                 <div className="blog-grid">

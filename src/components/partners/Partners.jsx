@@ -92,12 +92,7 @@ const Partners = () => {
                     <h2 className="partners-title">
                         شركاؤنا <span className="highlight">المميزون</span>
                     </h2>
-                    <div className="partners-divider">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                    </div>
+                    <div className="partners-divider"></div>
                 </div>
 
                 <div className="partners-slider">

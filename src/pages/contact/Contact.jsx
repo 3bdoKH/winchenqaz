@@ -125,12 +125,7 @@ const Contact = () => {
                             <h2 className="section-title">
                                 نسعد <span className="highlight">بتواصلك</span>
                             </h2>
-                            <div className="title-divider">
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                                <span className="star">★</span>
-                            </div>
+                            <div className="title-divider"></div>
                             <p className="form-description">
                                 املأ النموذج أدناه وسنتواصل معك في أقرب وقت ممكن
                             </p>

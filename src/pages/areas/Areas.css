@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(43, 43, 43, 0.9) 0%, rgba(26, 26, 26, 0.85) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.6) 50%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .areas-hero-content {
@@ -33,8 +33,8 @@
 
 .areas-hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
-    color: #FFFFFF;
+    font-weight: 800;
+    color: var(--text-dark);
     margin-bottom: 15px;
 }
 
@@ -44,7 +44,8 @@
 
 .areas-hero-subtitle {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-muted);
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
@@ -54,7 +55,8 @@
     justify-content: center;
     gap: 10px;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .breadcrumb a {
@@ -64,11 +66,11 @@
 }
 
 .breadcrumb a:hover {
-    color: #FFFFFF;
+    color: var(--text-dark);
 }
 
 .separator {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--text-muted);
 }
 
 /* Overview Section */
@@ -109,16 +111,11 @@
 }
 
 .title-divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin: 20px 0 30px;
-}
-
-.title-divider .star {
-    color: var(--primary);
-    font-size: 1.2rem;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-gradient);
+    margin: 20px auto 30px;
+    border-radius: 4px;
 }
 
 .overview-description {
@@ -410,11 +407,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-        linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%);
-    background-size: 60px 60px;
-    opacity: 0.3;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.95) 100%);
 }
 
 .why-areas-container {
@@ -473,7 +466,7 @@
 /* CTA Section */
 .areas-cta {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--dark-alt) 0%, var(--dark) 100%);
+    background: var(--light-bg);
     text-align: center;
     direction: rtl;
 }
@@ -486,14 +479,14 @@
 .cta-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--text-dark);
     margin-bottom: 20px;
 }
 
 .cta-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-muted);
     margin-bottom: 40px;
 }
 

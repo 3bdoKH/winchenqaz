@@ -544,10 +544,9 @@
     transform: translateY(-3px);
 }
 
-/* CTA Section */
 .article-cta {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #2B2B2B 0%, #1A1A1A 100%);
+    background: var(--light-bg);
     text-align: center;
     direction: rtl;
 }
@@ -560,14 +559,14 @@
 .cta-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--text-dark);
     margin-bottom: 20px;
 }
 
 .cta-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-muted);
     margin-bottom: 40px;
 }
 
@@ -589,8 +588,8 @@
 }
 
 .cta-button.primary {
-    background: var(--primary);
-    color: #2B2B2B;
+    background: var(--primary-gradient);
+    color: #FFFFFF;
 }
 
 .cta-button.primary:hover {
@@ -606,8 +605,8 @@
 }
 
 .cta-button.secondary:hover {
-    background: var(--primary);
-    color: #2B2B2B;
+    background: var(--primary-gradient);
+    color: #FFFFFF;
     transform: translateY(-3px);
 }
 

@@ -30,6 +30,7 @@ const FAQ = () => {
                         <h2 className="faq-title">
                             الأسئلة <span className="highlight">الشائعة</span>
                         </h2>
+                        <div className="faq-divider"></div>
                     </div>
 
                     <div className="faq-list">

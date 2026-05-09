@@ -43,12 +43,7 @@ const Keywords = () => {
                     <h2 className="keywords-title">
                         كلمات <span className="highlight">بحث ذات صلة</span>
                     </h2>
-                    <div className="keywords-divider">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                    </div>
+                    <div className="title-divider"></div>
                 </div>
 
                 <div className="keywords-cloud">

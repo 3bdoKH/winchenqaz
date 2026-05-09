@@ -170,12 +170,7 @@ const AreaDetails = () => {
                         <h2 className="section-title">
                             لماذا نحن الأفضل في <span className="highlight">{displayName}</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="why-us-grid">
                         {content.whyUs.map((item, index) => (
@@ -189,6 +184,66 @@ const AreaDetails = () => {
                 </div>
             </section>
 
+            {/* SEO Content */}
+            <section className="seo-content">
+                <div className="seo-container">
+                    <div className="seo-text">
+                        <h2>لماذا نحن الخيار الأول لخدمات الونش في {displayName}؟</h2>
+                        <p>
+                            عندما تبحث عن خدمة ونش موثوقة في {displayName}، فإن اختيار الشركة المناسبة أمر
+                            في غاية الأهمية. نحن نقدم خدمات إنقاذ السيارات الأكثر احترافية في {displayName}
+                            مع ضمان الوصول السريع والخدمة الممتازة منذ أكثر من 30 عاماً.
+                        </p>
+
+                        <h3>خدماتنا المتكاملة في {displayName}</h3>
+                        <p>
+                            نحن نوفر مجموعة شاملة من خدمات الطوارئ للسيارات في {displayName}. سواء كنت بحاجة
+                            إلى ونش لنقل سيارتك المعطلة، أو وصلة بطارية، أو تغيير إطار، أو توصيل وقود، فريقنا
+                            في {displayName} جاهز دائماً لمساعدتك في أي وقت من اليوم أو الليل.
+                        </p>
+
+                        <h3>خبرة محلية عميقة في {displayName}</h3>
+                        <p>
+                            فريقنا في {displayName} يمتلك معرفة عميقة بجميع الشوارع والطرق في المنطقة — من
+                            الطرق السريعة والمحاور الرئيسية إلى الشوارع الداخلية الفرعية. هذه المعرفة المحلية
+                            تمكننا من الوصول إليك بأسرع طريق ممكن حتى في أوقات الذروة المرورية أو في الليل.
+                        </p>
+
+                        <h3>لماذا العملاء في {displayName} يثقون بنا؟</h3>
+                        <ul className="seo-list">
+                            <li><strong>السرعة:</strong> نصل خلال 30 دقيقة أو أقل في {displayName} — وهو أفضل وقت استجابة في المنطقة</li>
+                            <li><strong>الأمان:</strong> نستخدم أحدث المعدات والتقنيات لحماية سيارتك بالكامل أثناء النقل</li>
+                            <li><strong>الاحترافية:</strong> فريق مدرب ومعتمد على أعلى مستوى من الكفاءة والخبرة</li>
+                            <li><strong>الشفافية:</strong> أسعار واضحة ومحددة بدون رسوم خفية أو مفاجآت</li>
+                            <li><strong>التوفر:</strong> خدمة 24/7 في {displayName} طوال أيام السنة بما فيها الأعياد</li>
+                            <li><strong>التأمين:</strong> جميع السيارات المنقولة مؤمنة بالكامل لراحة بالك</li>
+                        </ul>
+
+                        <h3>كيف تحصل على خدمة الونش في {displayName}؟</h3>
+                        <p>
+                            الحصول على خدمة الونش في {displayName} أمر بسيط جداً — خطوتان فقط:
+                            اتصل بنا على الرقم <strong>01055557235</strong> أو أرسل رسالة واتساب، وأخبرنا
+                            بموقعك الحالي في {displayName} ونوع المشكلة. سيتحرك فريقنا فوراً نحوك
+                            مع تقديم تحديث مستمر عن موقع الفريق حتى وصوله إليك.
+                        </p>
+
+                        <h3>تغطية شاملة في {displayName} وما حولها</h3>
+                        <p>
+                            بالإضافة إلى {displayName}، نخدم أيضاً جميع المناطق المحيطة في {mainArea.name}.
+                            أينما كنت في المنطقة، سواء على الطريق السريع أو في المناطق الداخلية، يمكنك
+                            الاعتماد علينا للحصول على خدمة إنقاذ سريعة وموثوقة.
+                        </p>
+
+                        <h3>خدمة الونش في {displayName} — الاتصال الفوري</h3>
+                        <p>
+                            لا تتردد في الاتصال بنا في أي وقت. خدمة الطوارئ الخاصة بنا في {displayName}
+                            متاحة على مدار الساعة، 365 يوماً في السنة. اتصل الآن على
+                            <strong> 01055557235 </strong> وسنكون معك في أقرب وقت ممكن.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Services Offered */}
             <section className="area-services">
                 <div className="services-container">
@@ -197,12 +252,7 @@ const AreaDetails = () => {
                         <h2 className="section-title">
                             خدماتنا في <span className="highlight">{displayName}</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="services-grid">
                         {content.services.map((service, index) => (
@@ -312,12 +362,7 @@ const AreaDetails = () => {
                         <h2 className="section-title">
                             الأسئلة الأكثر شيوعاً عن <span className="highlight">خدمة الونش في {displayName}</span>
                         </h2>
-                        <div className="title-divider">
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                            <span className="star">★</span>
-                        </div>
+                        <div className="title-divider"></div>
                     </div>
                     <div className="faq-grid">
                         {content.faq.map((item, index) => (
@@ -333,65 +378,7 @@ const AreaDetails = () => {
                 </div>
             </section>
 
-            {/* SEO Content */}
-            <section className="seo-content">
-                <div className="seo-container">
-                    <div className="seo-text">
-                        <h2>لماذا نحن الخيار الأول لخدمات الونش في {displayName}؟</h2>
-                        <p>
-                            عندما تبحث عن خدمة ونش موثوقة في {displayName}، فإن اختيار الشركة المناسبة أمر
-                            في غاية الأهمية. نحن نقدم خدمات إنقاذ السيارات الأكثر احترافية في {displayName}
-                            مع ضمان الوصول السريع والخدمة الممتازة منذ أكثر من 30 عاماً.
-                        </p>
 
-                        <h3>خدماتنا المتكاملة في {displayName}</h3>
-                        <p>
-                            نحن نوفر مجموعة شاملة من خدمات الطوارئ للسيارات في {displayName}. سواء كنت بحاجة
-                            إلى ونش لنقل سيارتك المعطلة، أو وصلة بطارية، أو تغيير إطار، أو توصيل وقود، فريقنا
-                            في {displayName} جاهز دائماً لمساعدتك في أي وقت من اليوم أو الليل.
-                        </p>
-
-                        <h3>خبرة محلية عميقة في {displayName}</h3>
-                        <p>
-                            فريقنا في {displayName} يمتلك معرفة عميقة بجميع الشوارع والطرق في المنطقة — من
-                            الطرق السريعة والمحاور الرئيسية إلى الشوارع الداخلية الفرعية. هذه المعرفة المحلية
-                            تمكننا من الوصول إليك بأسرع طريق ممكن حتى في أوقات الذروة المرورية أو في الليل.
-                        </p>
-
-                        <h3>لماذا العملاء في {displayName} يثقون بنا؟</h3>
-                        <ul className="seo-list">
-                            <li><strong>السرعة:</strong> نصل خلال 30 دقيقة أو أقل في {displayName} — وهو أفضل وقت استجابة في المنطقة</li>
-                            <li><strong>الأمان:</strong> نستخدم أحدث المعدات والتقنيات لحماية سيارتك بالكامل أثناء النقل</li>
-                            <li><strong>الاحترافية:</strong> فريق مدرب ومعتمد على أعلى مستوى من الكفاءة والخبرة</li>
-                            <li><strong>الشفافية:</strong> أسعار واضحة ومحددة بدون رسوم خفية أو مفاجآت</li>
-                            <li><strong>التوفر:</strong> خدمة 24/7 في {displayName} طوال أيام السنة بما فيها الأعياد</li>
-                            <li><strong>التأمين:</strong> جميع السيارات المنقولة مؤمنة بالكامل لراحة بالك</li>
-                        </ul>
-
-                        <h3>كيف تحصل على خدمة الونش في {displayName}؟</h3>
-                        <p>
-                            الحصول على خدمة الونش في {displayName} أمر بسيط جداً — خطوتان فقط:
-                            اتصل بنا على الرقم <strong>01055557235</strong> أو أرسل رسالة واتساب، وأخبرنا
-                            بموقعك الحالي في {displayName} ونوع المشكلة. سيتحرك فريقنا فوراً نحوك
-                            مع تقديم تحديث مستمر عن موقع الفريق حتى وصوله إليك.
-                        </p>
-
-                        <h3>تغطية شاملة في {displayName} وما حولها</h3>
-                        <p>
-                            بالإضافة إلى {displayName}، نخدم أيضاً جميع المناطق المحيطة في {mainArea.name}.
-                            أينما كنت في المنطقة، سواء على الطريق السريع أو في المناطق الداخلية، يمكنك
-                            الاعتماد علينا للحصول على خدمة إنقاذ سريعة وموثوقة.
-                        </p>
-
-                        <h3>خدمة الونش في {displayName} — الاتصال الفوري</h3>
-                        <p>
-                            لا تتردد في الاتصال بنا في أي وقت. خدمة الطوارئ الخاصة بنا في {displayName}
-                            متاحة على مدار الساعة، 365 يوماً في السنة. اتصل الآن على
-                            <strong> 01055557235 </strong> وسنكون معك في أقرب وقت ممكن.
-                        </p>
-                    </div>
-                </div>
-            </section>
         </div>
     );
 };

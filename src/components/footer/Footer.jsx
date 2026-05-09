@@ -132,7 +132,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="footer-container">
                     <p className="copyright">
-                        © {new Date().getFullYear()} خدمات الونش - جميع الحقوق محفوظة
+                        © {new Date().getFullYear()} خدمات الونش - جميع الحقوق محفوظة | تم التطوير بواسطة <a href="https://adams-agency.online" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-light)', textDecoration: 'none' }}>Adam's Agency</a>
                     </p>
                 </div>
             </div>

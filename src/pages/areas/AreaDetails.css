@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(43, 43, 43, 0.92) 0%, rgba(26, 26, 26, 0.88) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.6) 50%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .area-details-hero-content {
@@ -39,8 +39,8 @@
 
 .area-details-hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
-    color: #FFFFFF;
+    font-weight: 800;
+    color: var(--text-dark);
 }
 
 .area-details-hero-title .highlight {
@@ -49,7 +49,8 @@
 
 .area-details-hero-subtitle {
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-muted);
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
@@ -59,7 +60,8 @@
     justify-content: center;
     gap: 10px;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-muted);
+    font-weight: 500;
     flex-wrap: wrap;
 }
 
@@ -70,11 +72,11 @@
 }
 
 .breadcrumb a:hover {
-    color: #FFFFFF;
+    color: var(--text-dark);
 }
 
 .separator {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--text-muted);
 }
 
 /* Introduction */
@@ -141,16 +143,11 @@
 }
 
 .title-divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 15px;
-}
-
-.title-divider .star {
-    color: var(--primary);
-    font-size: 1.2rem;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-gradient);
+    margin: 15px auto 0;
+    border-radius: 4px;
 }
 
 .why-us-grid {
@@ -418,7 +415,7 @@
 /* Emergency Section */
 .area-emergency {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--dark-alt) 0%, var(--dark) 100%);
+    background: var(--light-bg);
     text-align: center;
     direction: rtl;
 }
@@ -431,14 +428,14 @@
 .emergency-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--text-dark);
     margin-bottom: 20px;
 }
 
 .emergency-description {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-muted);
     margin-bottom: 40px;
 }
 
