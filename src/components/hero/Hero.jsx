@@ -4,12 +4,6 @@ import heroBackground from '../../media/hero-background.jpg';
 import { ClockCheck, PhoneCall, ShieldCheck, Star } from 'lucide-react';
 import { phoneNumbers } from '../../data/phoneNumbers';
 const Hero = () => {
-    const scrollToContent = () => {
-        window.scrollBy({
-            top: window.innerHeight,
-            behavior: 'smooth'
-        });
-    };
 
     return (
         <section className="hero">
@@ -65,13 +59,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="scroll-indicator" onClick={scrollToContent}>
-                <div className="mouse">
-                    <div className="wheel"></div>
-                </div>
-                <p>تمرير</p>
             </div>
         </section>
     );

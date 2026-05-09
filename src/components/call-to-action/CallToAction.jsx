@@ -64,7 +64,7 @@ const CallToAction = () => {
                         </h2>
                         <p className="cta-subtitle">الأفضل والأسرع على الإطلاق</p>
                         <div className="divider-line"></div>
-                        <p className="cta-description">
+                        <p className="cta-description-call">
                             نفخر بتقديم خدمات إنقاذ السيارات الأكثر احترافية في جميع محافظات مصر.
                             من القاهرة إلى الإسكندرية، فريقنا المتميز
                             متواجد دائماً لخدمتك على مدار 24 ساعة طوال أيام الأسبوع. نمتلك أحدث

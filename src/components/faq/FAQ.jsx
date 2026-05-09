@@ -37,7 +37,7 @@ const FAQ = () => {
                         {faqs.map((faq) => (
                             <div
                                 key={faq.id}
-                                className={`faq-item ${activeId === faq.id ? 'active' : ''}`}
+                                className={`faq-item-home ${activeId === faq.id ? 'active' : ''}`}
                             >
                                 <button
                                     className="faq-question"
