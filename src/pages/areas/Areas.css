@@ -134,7 +134,7 @@
     margin-top: 50px;
 }
 
-.stat-box {
+.stat-box-areas {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 30px;
     border-radius: 15px;
@@ -143,87 +143,212 @@
     transition: all 0.3s ease;
 }
 
-.stat-box:hover {
+.stat-box-areas:hover {
     box-shadow: 0 10px 30px var(--primary-glow);
     transform: translateY(-5px);
 }
 
-.stat-number {
+.stat-number-areas {
     font-size: 3rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.stat-label {
+.stat-label-areas {
     font-size: 1rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
 }
 
-/* Quick Navigation */
-.quick-nav {
-    padding: 60px 20px;
-    background: var(--light-bg2);
+/* Search & Filter Section */
+.areas-search-section {
+    padding: 50px 20px 30px;
+    background: var(--light-bg);
     border-bottom: 3px solid var(--primary);
 }
 
-.quick-nav-container {
+.areas-search-container {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.quick-nav-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--dark-alt);
-    margin-bottom: 30px;
-    direction: rtl;
+/* Search Box */
+.areas-search-box {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.quick-nav-buttons {
+.areas-search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.areas-search-input {
+    width: 100%;
+    padding: 16px 50px 16px 50px;
+    border: 2px solid var(--border-light);
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
+    color: var(--text-dark);
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.areas-search-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--primary-glow-light), 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.areas-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.areas-search-clear {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--border-light);
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+}
+
+.areas-search-clear:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Filter Pills */
+.areas-filter-pills {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
-.nav-button {
-    padding: 15px 30px;
-    background: #FFFFFF;
-    border: 2px solid #e0e0e0;
+.areas-filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: #fff;
+    border: 2px solid var(--border-light);
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: var(--dark-alt);
+    color: var(--text-dark);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: inherit;
+}
+
+.areas-filter-pill:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 4px 15px var(--primary-glow-light);
+    transform: translateY(-2px);
+}
+
+.areas-filter-pill.active {
+    background: var(--primary-gradient);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.areas-filter-pill.active:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--primary-glow);
+    color: #fff;
+}
+
+.pill-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    font-size: 1rem;
 }
 
-.nav-button:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: #fff;
-    box-shadow: 0 5px 15px var(--primary-glow);
+.pill-icon svg { width: 16px; height: 16px; }
+
+.pill-count {
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 1px 9px;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
-.nav-button.active {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: #fff;
+.areas-filter-pill.active .pill-count {
+    background: rgba(255, 255, 255, 0.25);
 }
 
-.nav-icon {
-    font-size: 1.5rem;
-}
-
-.nav-count {
+/* Results count */
+.areas-results-count {
+    text-align: center;
     font-size: 0.9rem;
-    opacity: 0.8;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* No Results */
+.areas-no-results {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.no-results-inner {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.no-results-inner h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    direction: rtl;
+}
+
+.no-results-inner p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    direction: rtl;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .areas-search-section { padding: 40px 20px 20px; }
+    .areas-search-input { font-size: 0.95rem; padding: 14px 44px; }
+    .areas-filter-pills { gap: 8px; }
+    .areas-filter-pill { padding: 8px 16px; font-size: 0.88rem; }
 }
 
 /* Area Section */
@@ -345,12 +470,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(229, 57, 53, 0.8) 0%, rgba(13,71,161,0.8) 100%);
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.8) 0%, rgba(13, 71, 161, 0.8) 100%);
     transition: all 0.3s ease;
 }
 
 .subarea-card:hover .subarea-overlay {
-    background: linear-gradient(135deg, rgba(229, 57, 53, 0.65) 0%, rgba(13,71,161,0.65) 100%);
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.65) 0%, rgba(13, 71, 161, 0.65) 100%);
 }
 
 .subarea-icon {

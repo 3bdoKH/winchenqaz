@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import './Areas.css';
 import heroBackground from '../../media/hero-background.jpg';
 import contactImage from '../../media/contact.jpg';
 import { areas } from '../../data/areas';
 import { phoneNumbers } from '../../data/phoneNumbers';
-import { Building2, Building, Rocket, Map, Zap, Phone } from 'lucide-react';
+import { Building2, Building, Rocket, Map, Zap, Phone, Search, X } from 'lucide-react';
 const Areas = () => {
     const [selectedArea, setSelectedArea] = useState(null);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const areaIcons = {
         'القاهرة': <Building2 color='#1565C0' />,
@@ -23,6 +24,21 @@ const Areas = () => {
     const getTotalSubareas = () => {
         return areas.reduce((total, area) => total + area.areas.length, 0);
     };
+
+    // Filtered areas: apply governorate filter + subarea text search
+    const filteredAreas = useMemo(() => {
+        return areas
+            .filter(mainArea => !selectedArea || mainArea.name === selectedArea)
+            .map(mainArea => ({
+                ...mainArea,
+                areas: mainArea.areas.filter(sub =>
+                    sub.includes(searchTerm.trim())
+                )
+            }))
+            .filter(mainArea => mainArea.areas.length > 0);
+    }, [selectedArea, searchTerm]);
+
+    const totalResults = filteredAreas.reduce((t, a) => t + a.areas.length, 0);
 
     return (
         <div className="areas-page">
@@ -58,87 +74,133 @@ const Areas = () => {
 
                     {/* Stats */}
                     <div className="coverage-stats">
-                        <div className="stat-box">
-                            <div className="stat-number">{areas.length}</div>
-                            <div className="stat-label">محافظات رئيسية</div>
+                        <div className="stat-box-areas">
+                            <div className="stat-number-areas">{areas.length}</div>
+                            <div className="stat-label-areas">محافظات رئيسية</div>
                         </div>
-                        <div className="stat-box">
-                            <div className="stat-number">{getTotalSubareas()}+</div>
-                            <div className="stat-label">منطقة مخدومة</div>
+                        <div className="stat-box-areas">
+                            <div className="stat-number-areas">{getTotalSubareas()}+</div>
+                            <div className="stat-label-areas">منطقة مخدومة</div>
                         </div>
-                        <div className="stat-box">
-                            <div className="stat-number">24/7</div>
-                            <div className="stat-label">خدمة متواصلة</div>
+                        <div className="stat-box-areas">
+                            <div className="stat-number-areas">24/7</div>
+                            <div className="stat-label-areas">خدمة متواصلة</div>
                         </div>
-                        <div className="stat-box">
-                            <div className="stat-number">30</div>
-                            <div className="stat-label">دقيقة وقت وصول</div>
+                        <div className="stat-box-areas">
+                            <div className="stat-number-areas">30</div>
+                            <div className="stat-label-areas">دقيقة وقت وصول</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Quick Navigation */}
-            <section className="quick-nav">
-                <div className="quick-nav-container">
-                    <h3 className="quick-nav-title">اختر المحافظة</h3>
-                    <div className="quick-nav-buttons">
+            {/* Search & Filter */}
+            <section className="areas-search-section">
+                <div className="areas-search-container">
+                    {/* Search Bar */}
+                    <div className="areas-search-box">
+                        <span className="areas-search-icon"><Search size={20} /></span>
+                        <input
+                            type="text"
+                            className="areas-search-input"
+                            placeholder="ابحث عن منطقة... مثال: المعادي، الدقي"
+                            value={searchTerm}
+                            onChange={e => setSearchTerm(e.target.value)}
+                            dir="rtl"
+                        />
+                        {searchTerm && (
+                            <button className="areas-search-clear" onClick={() => setSearchTerm('')}>
+                                <X size={16} />
+                            </button>
+                        )}
+                    </div>
+
+                    {/* Governorate Filter Pills */}
+                    <div className="areas-filter-pills">
+                        <button
+                            className={`areas-filter-pill ${!selectedArea ? 'active' : ''}`}
+                            onClick={() => setSelectedArea(null)}
+                        >
+                            الكل
+                            <span className="pill-count">{getTotalSubareas()}</span>
+                        </button>
                         {areas.map((area, index) => (
                             <button
                                 key={index}
-                                className={`nav-button ${selectedArea === area.name ? 'active' : ''}`}
+                                className={`areas-filter-pill ${selectedArea === area.name ? 'active' : ''}`}
                                 onClick={() => setSelectedArea(selectedArea === area.name ? null : area.name)}
                             >
-                                <span className="nav-icon">{areaIcons[area.name]}</span>
-                                <span className="nav-text">{area.name}</span>
-                                <span className="nav-count">({area.areas.length})</span>
+                                <span className="pill-icon">{areaIcons[area.name]}</span>
+                                {area.name}
+                                <span className="pill-count">{area.areas.length}</span>
                             </button>
                         ))}
                     </div>
+
+                    {/* Results count */}
+                    <p className="areas-results-count" dir="rtl">
+                        {searchTerm || selectedArea
+                            ? `عرض ${totalResults} منطقة`
+                            : `إجمالي ${getTotalSubareas()} منطقة مخدومة`
+                        }
+                    </p>
                 </div>
             </section>
 
             {/* Main Areas Display */}
-            {areas.map((mainArea, index) => (
-                <section
-                    key={index}
-                    className={`area-section ${selectedArea && selectedArea !== mainArea.name ? 'hidden' : ''}`}
-                    id={mainArea.name}
-                >
-                    <div className="area-container">
-                        <div className="area-header">
-                            <a href={`/areas/${encodeURIComponent(mainArea.name)}`} className="area-header-content">
-                                <div className="area-header-text">
-                                    <h2 className="area-title">{mainArea.name}</h2>
-                                    <p className="area-count">{mainArea.areas.length} منطقة مخدومة</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="subareas-grid">
-                            {mainArea.areas.map((subarea, subIndex) => (
-                                <a
-                                    key={subIndex}
-                                    href={`/areas/${encodeURIComponent(subarea)}`}
-                                    className="subarea-card"
-                                    style={{ borderColor: areaColors[mainArea.name] }}
-                                >
-                                    <div className="subarea-image" style={{ backgroundImage: `url(${contactImage})` }}>
-                                        <div className="subarea-overlay"></div>
-                                    </div>
-                                    <div className="subarea-content">
-                                        <h3 className="subarea-name">ونش انقاذ {subarea}</h3>
-                                        <p className="subarea-info">خدمة متاحة 24/7</p>
-                                        <div className="subarea-footer">
-                                            <span className="subarea-badge">متاح الآن</span>
-                                        </div>
+            {filteredAreas.length > 0 ? (
+                filteredAreas.map((mainArea, index) => (
+                    <section
+                        key={index}
+                        className="area-section"
+                        id={mainArea.name}
+                    >
+                        <div className="area-container">
+                            <div className="area-header">
+                                <a href={`/areas/${encodeURIComponent(mainArea.name)}`} className="area-header-content">
+                                    <div className="area-header-text">
+                                        <h2 className="area-title">{mainArea.name}</h2>
+                                        <p className="area-count">{mainArea.areas.length} منطقة مخدومة</p>
                                     </div>
                                 </a>
-                            ))}
+                            </div>
+
+                            <div className="subareas-grid">
+                                {mainArea.areas.map((subarea, subIndex) => (
+                                    <a
+                                        key={subIndex}
+                                        href={`/areas/${encodeURIComponent(subarea)}`}
+                                        className="subarea-card"
+                                        style={{ borderColor: areaColors[mainArea.name] }}
+                                    >
+                                        <div className="subarea-image" style={{ backgroundImage: `url(${contactImage})` }}>
+                                            <div className="subarea-overlay"></div>
+                                        </div>
+                                        <div className="subarea-content">
+                                            <h3 className="subarea-name">ونش انقاذ {subarea}</h3>
+                                            <p className="subarea-info">خدمة متاحة 24/7</p>
+                                            <div className="subarea-footer">
+                                                <span className="subarea-badge">متاح الآن</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+                    </section>
+                ))
+            ) : (
+                <section className="areas-no-results">
+                    <div className="no-results-inner">
+                        <Search size={64} color="var(--primary)" />
+                        <h3>لا توجد نتائج لـ "{searchTerm}"</h3>
+                        <p>جرّب كلمة بحث أخرى أو اختر محافظة مختلفة</p>
+                        <button className="areas-filter-pill active" onClick={() => { setSearchTerm(''); setSelectedArea(null); }}>
+                            عرض كل المناطق
+                        </button>
                     </div>
                 </section>
-            ))}
+            )}
 
             {/* Why Choose Us for These Areas */}
             <section className="why-areas">
