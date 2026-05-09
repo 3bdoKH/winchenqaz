@@ -17,7 +17,7 @@ const Hero = () => {
                 <div className="hero-content">
                     <div className="hero-text">
                         <div className="hero-badge">
-                            <Star size={14} /> خدمة طوارئ موثوقة منذ 1988
+                            <Star size={14} /> خدمة طوارئ موثوقة
                         </div>
                         <h1 className="hero-title">
                             نقدم أعلى جودة من
