@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Articles.css';
 import heroBackground from '../../media/hero-background.jpg';
 import { articles } from '../../data/articles';
+import { phoneNumbers } from '../../data/phoneNumbers';
 import { Car, Wrench, Zap, Truck, Book, FileText, Search, Calendar, Clock, Pen, Eye } from 'lucide-react';
 const ArticlesPage = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -190,8 +191,8 @@ const ArticlesPage = () => {
                         تواصل معنا الآن وسنكون سعداء بالإجابة على جميع أسئلتك حول خدماتنا.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2001245789" className="cta-button primary">
-                            اتصل بنا: 01245789
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="cta-button primary">
+                            اتصل بنا: {phoneNumbers[0]}
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             أرسل رسالة

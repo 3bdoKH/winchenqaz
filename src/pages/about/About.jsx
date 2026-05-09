@@ -7,6 +7,7 @@ import tools from '../../media/tools.png';
 import fuel from '../../media/fuel.png';
 import battery from '../../media/battery.png';
 import { ArrowBigUpDash, ShieldBan, HandCoins, Target, Handshake, Rocket, MapPin, Trophy, ShieldCheck } from 'lucide-react';
+import { phoneNumbers } from '../../data/phoneNumbers';
 import { Star } from 'lucide-react';
 const About = () => {
     const values = [
@@ -37,9 +38,9 @@ const About = () => {
     ];
 
     const stats = [
-        { number: '10000+', label: 'عملية إنقاذ ناجحة' },
-        { number: '5000+', label: 'عميل راضٍ' },
-        { number: '50+', label: 'ونش وسيارة إنقاذ' },
+        { number: '5000+', label: 'عملية إنقاذ ناجحة' },
+        { number: '2000+', label: 'عميل راضٍ' },
+        { number: '30+', label: 'ونش وسيارة إنقاذ' },
         { number: '24/7', label: 'خدمة على مدار الساعة' }
     ];
 
@@ -407,7 +408,7 @@ const About = () => {
                         نحن هنا لخدمتك على مدار الساعة. اتصل بنا الآن وسنصل إليك في أسرع وقت ممكن.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+0123456789" className="cta-button primary">
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="cta-button primary">
                             اتصل بنا الآن
                         </a>
                         <a href="/contact" className="cta-button secondary">

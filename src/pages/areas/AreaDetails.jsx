@@ -4,6 +4,7 @@ import './AreaDetails.css';
 import heroBackground from '../../media/hero-background.jpg';
 import contactImage from '../../media/contact.jpg';
 import { areas } from '../../data/areas';
+import { phoneNumbers } from '../../data/phoneNumbers';
 import { Building2, Building, Zap, Car, Wrench, MapPin, Phone, MessageCircle, CheckCircle } from 'lucide-react';
 const AreaDetails = () => {
     const { areaName } = useParams();
@@ -135,7 +136,7 @@ const AreaDetails = () => {
                     <h1 className="area-details-hero-title">
                         ونش إنقاذ <span className="highlight">{displayName}</span>
                     </h1>
-                    <p className="area-details-hero-subtitle">خدمة احترافية 24/7 في {displayName} — اتصل الآن: 01055557235</p>
+                    <p className="area-details-hero-subtitle">خدمة احترافية 24/7 في {displayName} — اتصل الآن: {phoneNumbers[0]}</p>
                     <div className="breadcrumb">
                         <a href="/">الرئيسية</a>
                         <span className="separator">/</span>
@@ -222,7 +223,7 @@ const AreaDetails = () => {
                         <h3>كيف تحصل على خدمة الونش في {displayName}؟</h3>
                         <p>
                             الحصول على خدمة الونش في {displayName} أمر بسيط جداً — خطوتان فقط:
-                            اتصل بنا على الرقم <strong>01055557235</strong> أو أرسل رسالة واتساب، وأخبرنا
+                            اتصل بنا على الرقم <strong>{phoneNumbers[0]}</strong> أو أرسل رسالة واتساب، وأخبرنا
                             بموقعك الحالي في {displayName} ونوع المشكلة. سيتحرك فريقنا فوراً نحوك
                             مع تقديم تحديث مستمر عن موقع الفريق حتى وصوله إليك.
                         </p>
@@ -238,7 +239,7 @@ const AreaDetails = () => {
                         <p>
                             لا تتردد في الاتصال بنا في أي وقت. خدمة الطوارئ الخاصة بنا في {displayName}
                             متاحة على مدار الساعة، 365 يوماً في السنة. اتصل الآن على
-                            <strong> 01055557235 </strong> وسنكون معك في أقرب وقت ممكن.
+                            <strong> {phoneNumbers[0]} </strong> وسنكون معك في أقرب وقت ممكن.
                         </p>
                     </div>
                 </div>
@@ -331,15 +332,15 @@ const AreaDetails = () => {
                         اتصل بنا فوراً وسيصل فريقنا إليك في {displayName} خلال 30 دقيقة أو أقل!
                     </p>
                     <div className="emergency-buttons">
-                        <a href="tel:+2001055557235" className="emergency-button primary">
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="emergency-button primary">
                             <Phone color='white' style={
                                 {
                                     marginBottom: '-6px'
                                 }
-                            } /> اتصل الآن: 01055557235
+                            } /> اتصل الآن: {phoneNumbers[0]}
                         </a>
                         <a
-                            href={`https://wa.me/2001055557235?text=${encodeURIComponent(`أحتاج خدمة ونش في ${displayName}`)}`}
+                            href={`https://wa.me/+2${phoneNumbers[0]}?text=${encodeURIComponent(`أحتاج خدمة ونش في ${displayName}`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="emergency-button secondary"

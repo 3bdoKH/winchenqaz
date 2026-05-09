@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CallToAction.css';
 import hookImage from '../../media/hook.png';
-
+import { whatsappNumbers } from '../../data/phoneNumbers';
 const CallToAction = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -45,11 +45,8 @@ const CallToAction = () => {
         // Encode the message for URL
         const encodedMessage = encodeURIComponent(message);
 
-        // WhatsApp number (Egyptian format: 20 + number without leading 0)
-        const whatsappNumber = '0123456789';
-
         // Open WhatsApp with the pre-filled message
-        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/+2${whatsappNumbers[0]}?text=${encodedMessage}`;
         window.open(whatsappURL, '_blank');
     };
 

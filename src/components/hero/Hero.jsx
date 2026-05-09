@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import heroBackground from '../../media/hero-background.jpg';
 import { ClockCheck, PhoneCall, ShieldCheck, Star } from 'lucide-react';
+import { phoneNumbers } from '../../data/phoneNumbers';
 const Hero = () => {
     const scrollToContent = () => {
         window.scrollBy({
@@ -26,9 +27,9 @@ const Hero = () => {
                             ونش إنقاذ سريع وأسعار تنافسية — متاح 24 ساعة على مدار الأسبوع في الإسكندرية والمناطق المحيطة
                         </p>
                         <div className="hero-actions">
-                            <a href="tel:01234567890" className="hero-cta-btn">
+                            <a href={`tel:${phoneNumbers[0]}`} className="hero-cta-btn">
                                 <PhoneCall size={20} />
-                                اتصل الآن: 01234567890
+                                اتصل الآن: {phoneNumbers[0]}
                             </a>
                             <a href="/areas" className="hero-cta-outline">
                                 مناطق الخدمة ←
@@ -55,7 +56,7 @@ const Hero = () => {
                     <div className="hero-image-inner">
                         <img src={heroBackground} alt="ونش سحب وإنقاذ سيارات على الطريق السريع" className="hero-image" />
                     </div>
-                    
+
                     <div className="hero-floating-card">
                         <div className="floating-card-icon"><ClockCheck size={24} /></div>
                         <div className="floating-card-text">

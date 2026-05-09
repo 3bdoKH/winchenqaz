@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ArticleDetails.css';
 import { articles } from '../../data/articles';
+import { phoneNumbers } from '../../data/phoneNumbers';
 
 const ArticleDetails = () => {
     const { slug } = useParams();
@@ -148,8 +149,8 @@ const ArticleDetails = () => {
                         <div className="sidebar-contact">
                             <h4 className="sidebar-title">هل تحتاج مساعدة؟</h4>
                             <p className="sidebar-description">اتصل بنا الآن للحصول على خدمة فورية</p>
-                            <a href="tel:+2001055888893" className="sidebar-button">
-                                📱 اتصل الآن
+                            <a href={`tel:+2${phoneNumbers[0]}`} className="sidebar-button">
+                                اتصل الآن :  {phoneNumbers[0]}
                             </a>
                         </div>
 
@@ -220,8 +221,8 @@ const ArticleDetails = () => {
                         تواصل معنا الآن إذا كنت بحاجة إلى أي من خدماتنا. نحن متاحون 24/7 لخدمتك.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2001055888893" className="cta-button primary">
-                            اتصل بنا: 01055888893
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="cta-button primary">
+                            اتصل بنا: {phoneNumbers[0]}
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             أرسل رسالة

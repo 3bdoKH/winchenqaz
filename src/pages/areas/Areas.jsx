@@ -3,6 +3,7 @@ import './Areas.css';
 import heroBackground from '../../media/hero-background.jpg';
 import contactImage from '../../media/contact.jpg';
 import { areas } from '../../data/areas';
+import { phoneNumbers } from '../../data/phoneNumbers';
 import { Building2, Building, Rocket, Map, Zap, Phone } from 'lucide-react';
 const Areas = () => {
     const [selectedArea, setSelectedArea] = useState(null);
@@ -182,8 +183,8 @@ const Areas = () => {
                         نحن نتوسع باستمرار لتغطية المزيد من المناطق. اتصل بنا الآن للتأكد من توفر الخدمة في منطقتك.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+2012456789" className="cta-button primary">
-                            اتصل للاستفسار: 012456789
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="cta-button primary">
+                            اتصل للاستفسار: {phoneNumbers[0]}
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             أرسل رسالة

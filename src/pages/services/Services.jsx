@@ -7,6 +7,7 @@ import tools from '../../media/tools.png';
 import fuel from '../../media/fuel.png';
 import battery from '../../media/battery.png';
 import { Wrench, Car, Search, FileText } from 'lucide-react';
+import { phoneNumbers } from '../../data/phoneNumbers';
 const ServicesPage = () => {
     const mainServices = [
         {
@@ -286,8 +287,8 @@ const ServicesPage = () => {
                         فريقنا جاهز للاستجابة لطلبك على مدار الساعة. اتصل بنا الآن أو احجز خدمتك عبر الإنترنت.
                     </p>
                     <div className="cta-buttons">
-                        <a href="tel:+0123456789" className="cta-button primary">
-                            اتصل الآن: 0123456789
+                        <a href={`tel:+2${phoneNumbers[0]}`} className="cta-button primary">
+                            اتصل الآن: {phoneNumbers[0]}
                         </a>
                         <a href="/contact" className="cta-button secondary">
                             احجز عبر الإنترنت
